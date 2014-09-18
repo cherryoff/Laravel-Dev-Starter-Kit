@@ -2,8 +2,6 @@
 
 `Version: 0.1.0 Beta`
 
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-
 Laravel Dev Starter kit is a sample application for development use Bower and Grunt with Laravel
 
 ## Features
