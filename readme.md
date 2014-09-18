@@ -1,41 +1,78 @@
-## LaravelDev Starter kit
+# Laravel Dev Starter kit
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
+`Version: 0.1.0 Beta`
+
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+
+Laravel Dev Starter kit is a sample application for development use Bower and Grunt with Laravel
+
+## Features
+
+* Include Bower
+    * All packages in not public directory
+    * Packages install and update with bower
+* Include Grunt
+    * Grunt watching the filesystem for changes
+* All style and js code is auto compilation, concatenation, and minfication
+* Easy using in view
+```
+    <script src="<?php echo Asset::url('basejs'); ?>"></script>
+```
+* Packages included:
+    * Backend (Composer)
+        * [Laravel-Assetic](https://github.com/slushie/laravel-assetic)
+        * [LessPHP](https://github.com/leafo/lessphp)
+        * [JSMin4Assetic](https://github.com/lmammino/jsmin4assetic)
+        * [CssMin](https://github.com/natxet/CssMin)
+    * Frontend (Bower)
+        * [Bootstrap](https://github.com/twbs/bootstrap)
+        * [jQuery](https://github.com/jquery/jquery)
+
+## Requirements
+* PHP >= 5.4.0
+* MCrypt PHP Extension
+* Composer
+* Node
+* Grunt
 
 ## Need
 
 **Composer**
+
 *locally*
-curl -sS https://getcomposer.org/installer | php
-or
-php -r "readfile('https://getcomposer.org/installer');" | php
+
+    curl -sS https://getcomposer.org/installer | php
+    or
+    php -r "readfile('https://getcomposer.org/installer');" | php
+
 *globally*
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
+
+    curl -sS https://getcomposer.org/installer | php
+    mv composer.phar /usr/local/bin/composer
 
 **Node**
+
 *Ubuntu*
-curl -sL https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install nodejs
+
+    curl -sL https://deb.nodesource.com/setup | sudo bash -
+    sudo apt-get install nodejs
 
 **Bower**
-npm install -g bower
+
+    npm install -g bower
 
 **Grunt**
-npm install -g grunt-cli
+
+    npm install -g grunt-cli
 
 ## Install
 
-sudo php composer.phar install
-or
-sudo composer install
+    php composer.phar install
+*or*
 
-bower install
+    composer install
+*and*
 
-npm install
-
-grunt
+    bower install
+    npm install
+    grunt
