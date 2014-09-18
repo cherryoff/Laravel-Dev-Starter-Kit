@@ -74,3 +74,8 @@ Laravel Dev Starter kit is a sample application for development use Bower and Gr
     bower install
     npm install
     grunt
+
+## Additional information
+
+Big thanks, based on [Terry Matula](http://www.terrymatula.com/development/2013/how-i-use-bower-and-grunt-with-my-laravel-projects/)
+Any questions, feel free to [contact me](http://twitter.com/cherry_off)
