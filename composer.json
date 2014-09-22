@@ -14,7 +14,9 @@
         "slushie/laravel-assetic": "dev-master",
         "leafo/lessphp": "dev-master",
         "lmammino/jsmin4assetic": "1.0.*",
-        "natxet/CssMin": "dev-master"
+        "natxet/CssMin": "dev-master",
+        "barryvdh/laravel-ide-helper": "1.*",
+        "way/generators": "2.*"
 	},
 	"autoload": {
 		"classmap": [
@@ -39,6 +41,7 @@
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
+            "php artisan ide-helper:generate",
 			"php artisan optimize",
             "if [ -d \"public/css/\" ] \nthen \nrm -rf public/css/*.css \nfi",
             "if [ -d \"public/js/\" ] \nthen \nrm -rf public/js/*.js \nfi",
