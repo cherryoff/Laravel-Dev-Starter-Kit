@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return array(
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'ru',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'fallback_locale' => 'en',
+	'fallback_locale' => 'ru',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -121,10 +121,6 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-        'Slushie\LaravelAssetic\LaravelAsseticServiceProvider',
-        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-        'Way\Generators\GeneratorsServiceProvider',
-
 	),
 
 	/*
@@ -191,7 +187,6 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-        'Asset'           => 'Slushie\LaravelAssetic\Facades\AssetFacade',
 
 	),
 

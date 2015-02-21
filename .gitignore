@@ -1,7 +1,5 @@
 /bootstrap/compiled.php
 /vendor
-/assets/bower
-/node_modules
 /.idea
 composer.phar
 composer.lock
@@ -9,3 +7,8 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
+
+/assets/bower
+/node_modules
+/public/packages
+/public/static
